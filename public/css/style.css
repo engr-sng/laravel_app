@@ -1,0 +1,78 @@
+/* 全体的に適用 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    list-style-position: inside;
+}
+
+/* フォントデザイン */
+
+body {
+    font-size: 16px;
+    color: #333333;
+    font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+/* レイアウト */
+.header-color {
+    background-color: #4169e1;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.container {
+    max-width: 1170px;
+    height: 60px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-left {
+    padding: 0 0 0 0;
+}
+
+.header-right {
+    padding: 0 0 0 0;
+}
+
+.nav-list {
+    display: block;
+}
+
+.nav-list-item {
+  display: inline-block;
+  line-height: 60px;
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+/* フレックスレイアウト　*/
+
+.flex-between {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-around {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-evenly {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}

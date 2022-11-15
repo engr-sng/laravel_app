@@ -1,10 +1,18 @@
-<h2>サンプル詳細ページです。</h2>
+@extends('layouts.app')
 
-<a href="{{route('example.index')}}">一覧へ戻る</a>
+@section('main')
+    <div class="wrapper">
+        <div class="container">
+            <h2>サンプル詳細ページです。</h2>
 
-<h3>詳細</h3>
-{{$example->id}}
-{{$example->title}}
-{{$example->description}}
-{{$example->created_at}}
-{{$example->updated_at}}
+            <a href="{{route('example.index')}}">一覧へ戻る</a>
+
+            <h3>詳細</h3>
+            {{$example->id}}
+            {{$example->title}}
+            {{$example->description}}
+            {{$example->created_at}}
+            {{$example->updated_at}}
+        </div>
+    </div>
+@endsection
